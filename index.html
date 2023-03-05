@@ -2,22 +2,69 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Gamepad Test</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Switch Gamepad Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      
+      .button {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        margin: 10px;
+        font-size: 20px;
+        line-height: 50px;
+      }
+      
+      .stick {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        margin: 10px;
+        font-size: 20px;
+        line-height: 100px;
+      }
+      
+      .stick span {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Gamepad Test</h1>
-    <div id="gamepad-info">
-      <h2>Gamepad</h2>
-      <ul>
-        <li>Button 1: <span id="button-0"></span></li>
-        <li>Button 2: <span id="button-1"></span></li>
-        <li>Button 3: <span id="button-2"></span></li>
-        <li>Button 4: <span id="button-3"></span></li>
-        <li>Stick X: <span id="stick-0"></span></li>
-        <li>Stick Y: <span id="stick-1"></span></li>
-      </ul>
+    <h1>Switch Gamepad Demo</h1>
+    <div>
+      <div class="button" id="button-0"></div>
+      <div class="button" id="button-1"></div>
+      <div class="button" id="button-2"></div>
+      <div class="button" id="button-3"></div>
+      <div class="button" id="button-4"></div>
+      <div class="button" id="button-5"></div>
+      <div class="button" id="button-6"></div>
+      <div class="button" id="button-7"></div>
+      <div class="button" id="button-8"></div>
+      <div class="button" id="button-9"></div>
+      <div class="button" id="button-10"></div>
+      <div class="button" id="button-11"></div>
+      <div class="button" id="button-12"></div>
+      <div class="button" id="button-13"></div>
+      <div class="button" id="button-14"></div>
+      <div class="button" id="button-15"></div>
+      <div class="button" id="button-16"></div>
     </div>
-    <script src="script.js"></script>
+    <div>
+      <div class="stick" id="stick-left">
+        <span id="stick-left-x"></span>
+        <span id="stick-left-y"></span>
+      </div>
+      <div class="stick" id="stick-right">
+        <span id="stick-right-x"></span>
+        <span id="stick-right-y"></span>
+      </div>
+    </div>
+    <script src="gamepad.js"></script>
   </body>
 </html>
